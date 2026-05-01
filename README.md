@@ -1,0 +1,101 @@
+<div align="center">
+  <h1>🌟 Premium Marshmallow Landing Page</h1>
+  <p><i>A beautiful, responsive full-stack application for ordering premium marshmallows.</i></p>
+  
+  ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+  ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+  ![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=blue)
+  ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+  ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+</div>
+
+---
+
+## 📖 Overview
+
+This repository contains a complete full-stack application designed to capture customer orders. 
+- **Frontend**: A sleek, animated React landing page focusing on user experience and seamless interactions.
+- **Backend**: A robust Node.js/Express server that securely handles form submissions and dispatches email notifications.
+
+---
+
+## ✨ Features
+
+- 📱 **Fully Responsive:** Beautifully optimized for Mobile, Tablet, and Desktop.
+- 🎨 **Smooth Animations:** Integrated with Framer Motion for engaging entry animations.
+- 📋 **Booking Form:** Fully functional form validation and clean UI for accurate data collection.
+- 📧 **Automated Emails:** Instant email notifications dispatched to the owner upon new orders via Nodemailer.
+- 💾 **Local Storage:** Incoming orders are neatly saved into a local `orders.json` for easy management.
+
+---
+
+## 📁 Project Structure
+
+```text
+📦 Repository
+ ┣ 📂 frontend  # React (Vite) + Framer Motion
+ ┗ 📂 backend   # Node.js + Express + Nodemailer
+```
+
+---
+
+## 🚀 Getting Started
+
+Follow these instructions to run the project locally on your machine.
+
+### Prerequisites
+
+Ensure you have **[Node.js](https://nodejs.org/)** installed.
+
+### 1️⃣ Setting up the Backend
+
+1. Navigate to the backend folder:
+   ```bash
+   cd backend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Configure your environment variables:
+   Create a `.env` file in the `backend` directory:
+   ```env
+   PORT=5000
+   EMAIL_USER=your_email@gmail.com
+   EMAIL_PASS=your_google_app_password
+   ```
+
+   > **🚨 Important:** Google strictly requires an App Password for third-party email access.
+   > 1. Go to your [Google Account Security Settings](https://myaccount.google.com/security).
+   > 2. Ensure **2-Step Verification** is enabled.
+   > 3. Search for **App passwords**.
+   > 4. Create a new App Password (e.g., "Node Server").
+   > 5. Copy the **16-character password** into your `.env` file as `EMAIL_PASS` (without spaces).
+   > 6. *Restart your server after applying these changes!*
+
+4. Start the backend Node server:
+   ```bash
+   npm start
+   ```
+   > Server runs at: `http://localhost:5000`
+
+### 2️⃣ Setting up the Frontend
+
+1. Open a **new terminal** and navigate to the frontend folder:
+   ```bash
+   cd frontend
+   ```
+2. Install frontend dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the Vite development server:
+   ```bash
+   npm run dev
+   ```
+4. 🎉 **Ready!** Open your browser and navigate to the provided local URL (usually `http://localhost:5173`).
+
+---
+<div align="center">
+  <sub>Built with ❤️ for Premium Marshmallows</sub>
+</div>
